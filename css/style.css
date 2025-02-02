@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quando&family=Work+Sans:wght@100..900&display=swap');
+
+body {
+
+
+    background-color: #f5f5f5;
+    background-color: #e8e8e8;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d1ced5' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+
+/* navbar   */
+.bg-dark {
+    background-color: #7441da !important;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #ec9c9c;
+}
+
+.navbar-dark .navbar-toggler {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 4%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.3s ease-out;
+}
+
+.navbar-toggler.collapse .navbar-toggler-icon {
+    color: white !important;
+}
+
+/* profile  */
+.profile {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #bb2c2c;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: rotate(-25deg);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease-out, box-shadow ease-out;
+
+}
+
+.profile:hover {
+    transform: rotate(0deg);
+    box-shadow: none;
+}
+
+
+
+/* card  tecnologias */
+
+.tech-card {
+    border: 1px solid #dddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tech-header {
+    display: flex;
+    align-items: end;
+    padding: 3px;
+    gap: 10px;
+}
+
+
+
+
+
+/* tools*/
+.tools .card {
+    border-color: transparent;
+    padding: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px; 
+
+}
+
+.tools .card img {
+    width: 150px;
+    margin: 0 auto;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+/* Efecto hover en la tarjeta */
+.tools .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover en la imagen */
+.tools .card:hover .card-img-top {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+
+.tools .card-img-container {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.tools .card-text {
+    margin-top: 1rem;
+    color: #424141;
+}
+
+.tools .hover-line {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tools .hover-line::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    opacity: 0.2;
+    background-color: #8824b6;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.tools .hover-line:hover::after {
+    transform: scaleX(1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tools .card-img-container {
+        height: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tools .card-img-container {
+        height: 120px;
+    }
+}
+
+
+
+/* projects  */
+
+.cards {
+    display: flex;
+    max-width: 800px;
+    width: calc(100% - 100px);
+    height: 400px;
+}
+
+.cards .card-proyect .info .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white; /* Texto en blanco */
+}
+
+.cards .card-proyect .label .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+.cards .card-proyect .label .icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.cards .card-proyect .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    white-space: pre;
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color: white; 
+}
+
+.cards .card-proyect {
+    position: relative;
+    min-width: 60px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: flex 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 30px;
+}
+
+.cards .card-proyect .label {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    transition: 0.5s all ease-in-out;
+}
+
+.cards .card-proyect.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.cards .card-proyect.active {
+    flex-grow: 10000;
+    background-size: cover;
+}
+
+.cards .card-proyect:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.cards .card-proyect .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* Aumentamos la altura del degradado */
+    background: linear-gradient(
+        0deg, rgba(0, 0, 0, 02), transparent /* Degradado más oscuro */
+    );
+}
+
+.cards .card-proyect.active .info {
+    opacity: 1;
+}
+
+.cards .card-proyect:not(.active) .info {
+    opacity: 0;
+}
+
+
+.fs-small{
+    font-size: 12px;
+    margin-left: 2rem;
+}
+
+
+.icon-link-footer{
+    font-size: 1.5rem;
+}

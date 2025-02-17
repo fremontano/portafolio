@@ -1,452 +1,692 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
+    <body>
 
-
-
-    <!-- navbar  -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-3">
-        <div class="container">
-            <a class="navbar-brand text-white fw-bolder fs-3" href="#">
-                Bienvenidos
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#about">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#about">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#languages">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#projects">Proyecto</a>
-                    </li>
-            </div>
-        </div>
-    </nav>
-
-    <!-- profile  -->
-    <section class="container-xl py-5 " id="about">
-        <div class="row flex-column flex-lg-row ">
-            <div class="col-12 col-lg-2   text-center w-auto  me-4 mb-3 m-lg-0">
-                <img src="/images/freyder.jpg" alt="imagen profile" class="profile">
-            </div>
-            <div class="col-12 col-lg-6 p-3 ">
-                <div class="text-center text-lg-start">
-                    <a href="#" class="text-danger fw-bolder h3 text-capitalize heading">Freyder Montaño Perlaza</a>
-                    <span class="text-black-50 fw-bold heading fs-5">Analista Programador</span>
-                </div>
-                <h2 class=" text-center text-lg-start mb-5 mb-lg-0 fw-bolder display-5 heading mt-3 mb-3">
-                    Desarollador Backend.<span class="small"></span></h2>
-
-                <div class="text-center text-lg-start mt-5">
-                    <small class="text-danger fw-bolder mb-5 mb-lg-0 text-decoration-underline">📅 Enero 25,
-                        2025</small>
-
-                    <p class=" p-2 fs-5 lh-base">
-                        Soy un apasionado por la tecnología, disfruto del desarrollo backend con <span
-                            className="fw-bold">Java Spring Boot</span> y <span className="fw-bold">Hibernate</span>.
-                        Cuento con experiencia en <span className="fw-bold">Node.js</span> y <span
-                            className="fw-bold">Express</span>, creando soluciones robustas y escalables. <br>
-
-                        Me especializo en optimizar el rendimiento de <span className="fw-bold">aplicaciones y
-                            APIs</span>, asegurando <span className="fw-bold"> eficiencia, seguridad y
-                            escalabilidad</span>. Siempre en búsqueda de nuevos desafíos para innovar y mejorar la
-                        arquitectura del software.
-
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 bo mt-3 mt-lg-0  mx-auto">
-                <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/pluralsight-puzzle-piece.webp"
-                    alt="imagen" class=" d-none d-lg-block">
-            </div>
-        </div>
-    </section>
-
-
-    <!-- services  -->
-    <section class="pt-3 mb-5 services" id="services">
-        <div class="container-xl">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
-                <div class="col h-100 d-flex flex-column mb-5 ">
-                    <div class="text-center p-2">
-                        <img src="./images/undraw_real-time-collaboration_g4mc.svg" alt="" style="width: 140px;">
+        <!-- navbar  -->
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-3">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bolder fs-3" href="#">
+                    Bienvenidos
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#about">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#about">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5"
+                                href="#languages">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5"
+                                href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5"
+                                href="#projects">Proyecto</a>
+                        </li>
                     </div>
-                    <h2 href="#" class="text-center  text-decoration-underline  fw-bolder fs-3">
-                        Trabajo en Equipo
-                    </h2>
-
                 </div>
+            </nav>
 
-                <div class="col h-100 d-flex flex-column mb-5 ">
-                    <div class="text-center p-2">
-                        <img src="./images/undraw_pie-chart_eo9h.svg" alt="" style="width: 110px;">
+            <!-- profile  -->
+            <section class="container-xl py-5 " id="about">
+                <div class="row flex-column flex-lg-row ">
+                    <div
+                        class="col-12 col-lg-2   text-center w-auto  me-4 mb-3 m-lg-0">
+                        <img src="./images/freyder.jpg" alt="imagen profile"
+                            class="profile">
                     </div>
-                    <h2 href="#" class="text-center text-decoration-underline fw-bolder fs-3 mt-3">
-                        Constante Aprendizaje
-                    </h2>
+                    <div class="col-12 col-lg-6 p-3 ">
+                        <div class="text-center text-lg-start">
+                            <a href="#"
+                                class="text-danger fw-bolder h3 text-capitalize heading">Freyder
+                                Montaño Perlaza</a>
+                            <span
+                                class="text-black-50 fw-bold heading fs-5">Analista
+                                Programador</span>
+                        </div>
+                        <h2
+                            class=" text-center text-lg-start mb-5 mb-lg-0 fw-bolder display-5 heading mt-3 mb-3">
+                            Desarollador Backend.<span
+                                class="small"></span></h2>
 
-                </div>
+                        <div class="text-center text-lg-start mt-5">
+                            <small
+                                class="text-danger fw-bolder mb-5 mb-lg-0 text-decoration-underline">📅
+                                Enero 25,
+                                2025</small>
 
-                <div class="col h-100 d-flex flex-column mb-5 ">
-                    <div class="text-center p-2">
-                        <img src="./images/undraw_visual-data_3ghp.svg" alt="" style="width: 150px;">
-                    </div>
-                    <h2 href="#" class="text-center text-decoration-underline fw-bolder fs-3">
-                        Resolución de problemas
-                    </h2>
+                            <p class=" p-2 fs-5 lh-base">
+                                Soy un apasionado por la tecnología, disfruto
+                                del desarrollo backend con <span
+                                    className="fw-bold">Java Spring Boot</span>
+                                y <span className="fw-bold">Hibernate</span>.
+                                Cuento con experiencia en <span
+                                    className="fw-bold">Node.js</span> y <span
+                                    className="fw-bold">Express</span>, creando
+                                soluciones robustas y escalables. <br>
 
-                </div>
-            </div>
-        </div>
-    </section>
+                                Me especializo en optimizar el rendimiento de
+                                <span className="fw-bold">aplicaciones y
+                                    APIs</span>, asegurando <span
+                                    className="fw-bold"> eficiencia, seguridad y
+                                    escalabilidad</span>. Siempre en búsqueda de
+                                nuevos desafíos para innovar y mejorar la
+                                arquitectura del software.
 
-
-    <!-- tools  -->
-    <section id="tools" class="tools">
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-3 justify-content-center">
-                <!-- Tarjeta 1 -->
-                <div class="col">
-                    <div class="card border-0 card-hidden">
-                        <img src="./images/landingpage-software-gobierno-corporativo.png"
-                            alt="Microservicios y Seguridad" class="card-img-top" />
-                        <div class="card-img-container">
-                            <h3 class="card-title fs-4 fw-bold hover-line">Microservicios y Seguridad</h3>
-                            <p class="card-text">Implementación basada en MVS, utilizando JWT, OAuth y HTTPS para
-                                proteger las APIs y los datos.</p>
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <!-- Tarjeta 2 -->
-                <div class="col">
-                    <div class="card border-0 card-hidden">
-                        <img src="./images/API-Interface-Service.png" alt="Desarrollo de APIs" class="card-img-top" />
-                        <div class="card-img-container">
-                            <h3 class="card-title fs-4 fw-bold hover-line p-3">Desarrollo de APIs</h3>
-                            <p class="card-text">Desarrollo y gestión de APIs seguras y optimizadas, facilitando la
-                                integración de sistemas de manera eficiente.</p>
-                        </div>
+                    <div class="col-12 col-lg-4 bo mt-3 mt-lg-0  mx-auto">
+                        <img
+                            src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/pluralsight-puzzle-piece.webp"
+                            alt="imagen" class=" d-none d-lg-block">
                     </div>
                 </div>
+            </section>
 
-                <!-- Tarjeta 3 -->
-                <div class="col">
-                    <div class="card border-0 card-hidden">
-                        <img src="./images/Asesoria-en-implementacion.png" alt="Base de Datos SQL y NoSQL"
-                            class="card-img-top" />
-                        <div class="card-img-container">
-                            <h3 class="card-title fs-4 fw-bold hover-line">Base de Datos SQL y NoSQL</h3>
-                            <p class="card-text">Gestión y optimización de bases de datos SQL y NoSQL para alto
-                                rendimiento.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- tecnology  -->
-    <section class="languages" id="languages">
-        <div class="col-10 mx-auto my-5 text-center">
-            <h2 className="mb-5">Por qué elijo estas tecnologia para mi desarrollo de mi carrera profesional.</h2>
-        </div>
-        <div class="container-xl py-5">
-            <div class="row g-3">
-                <!-- card 1 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Oof-eCJGVDJhxTMttipiAd8ETE8nlhrELi652bJJ4Eg6-ItM-JeZXmTP52jT7rUswTs&usqp=CAU"
-                                    alt="github" />
+            <!-- services  -->
+            <section class="pt-3 mb-5 services" id="services">
+                <div class="container-xl">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                        <div class="col h-100 d-flex flex-column mb-5 ">
+                            <div class="text-center p-2">
+                                <img
+                                    src="./images/undraw_real-time-collaboration_g4mc.svg"
+                                    alt style="width: 140px;">
                             </div>
-                            <p class="fw-bold">Git & GitHub</p>
-                        </div>
-                        <p className="mt-3">Gestión eficiente control para colaboración en equipo y despliegue seguro
-                            del código en el repositorio.</p>
-                    </div>
-                </div>
-                <!-- card 2 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://education.oracle.com/file/general/p-80-java.png" alt="github" />
-                            </div>
-                            <p className="fw-bold">Java Spring Boot</p>
-                        </div>
-                        <p className="mt-3">Java Spring Boot, framework utilizado para el desarrollo de aplicaciones web
-                            y servicios REST.
-                        </p>
-                    </div>
-                </div>
-                <!-- card 3  -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfoZzQEUwX74bJZBmU-aN4hCzzl6knWzlSw&s"
-                                    alt="github" />
-                            </div>
-                            <p className="fw-bold">Vanilla JavaScript</p>
-                        </div>
-                        <p className="mt-3">Consumo de APIs con Fetch y Axios, y manipulación dinámica del DOM para una
-                            experiencia interactiva y eficiente.</p>
-                    </div>
-                </div>
-                <!-- card 4  -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://cdn.openwebinars.net/media/fbads-nodejs.jpg" alt="github" />
-                            </div>
-                            <p className="fw-bold">Node.Js & Express</p>
-                        </div>
-                        <p className="mt-3">Creación APIs con rutas dinamicas y MVC para enpoint eficientes junto a Jwt.
-                        </p>
-                    </div>
-                </div>
-                <!-- card 5  -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://blog.brejnak.info/wp-content/uploads/2024/01/1-hkzF9m5828c-UIaSQNUug-e1706276166815-300x240.webp"
-                                    alt="github" />
-                            </div>
-                            <p className="fw-bold">SQL Server</p>
-                        </div>
-                        <p className="mt-3">Gestion de base de datos relacionales, consultas optimizada y modelo
-                            eficiente.</p>
-                    </div>
-                </div>
-                <!-- card 6  -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://kinlane-productions2.s3.amazonaws.com/postman/logo-glyph.png"
-                                    alt="github" />
-                            </div>
-                            <p className="fw-bold">Postman</p>
-                        </div>
-                        <p className="mt-3">Herramienta para probar y documentar APIs de manera eficiente y
-                            estructurada.</p>
-                    </div>
-                </div>
-                <!-- card 7  -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://ih1.redbubble.net/image.5536134119.2626/st,small,507x507-pad,600x600,f8f8f8.jpg"
-                                    alt="intellijent" />
-                            </div>
-                            <p className="fw-bold">IntellijIDEA.</p>
-                        </div>
-                        <p className="mt-3">IDE completo para el desarrollo de aplicaciones en Java y Spring boot, con
-                            soporte
-                            integral.</p>
-                    </div>
-                </div>
-                <!-- card 8  -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card tech-card">
-                        <div class="tech-header">
-                            <div class="tech-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png"
-                                    alt="github" />
-                            </div>
-                            <p className="fw-bold">Visual Studio Code.</p>
-                        </div>
-                        <p className="mt-3">Editor de código ligero y versátil, compatible con múltiples lenguajes de
-                            programación.</p>
+                            <h2 href="#"
+                                class="text-center  text-decoration-underline  fw-bolder fs-3">
+                                Trabajo en Equipo
+                            </h2>
 
+                        </div>
+
+                        <div class="col h-100 d-flex flex-column mb-5 ">
+                            <div class="text-center p-2">
+                                <img src="./images/undraw_pie-chart_eo9h.svg"
+                                    alt style="width: 110px;">
+                            </div>
+                            <h2 href="#"
+                                class="text-center text-decoration-underline fw-bolder fs-3 mt-3">
+                                Constante Aprendizaje
+                            </h2>
+
+                        </div>
+
+                        <div class="col h-100 d-flex flex-column mb-5 ">
+                            <div class="text-center p-2">
+                                <img src="./images/undraw_visual-data_3ghp.svg"
+                                    alt style="width: 150px;">
+                            </div>
+                            <h2 href="#"
+                                class="text-center text-decoration-underline fw-bolder fs-3">
+                                Resolución de problemas
+                            </h2>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- projects  -->
-    <main class="container" id="projects">
-        <h3 class="heading fw-bold mb-5 hover-line  text-center text-lg-start w-100">Mis Proyectos</h3>
-        <div class="cards">
-            <!-- Card 1 -->
-            <div class="card-proyect card-one"
-                style="background-image: url('https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1700');">
-                <div class="shadow"></div> <!-- Sombra bottom -->
-                <div class="label d-flex justify-content-between align-items-center">
-
-                    <div class="d-flex align-items-center">
-                        <!-- Contenedor de los ícono GitHub -->
-                        <div class="d-flex align-items-center">
-                            <div class="icon me-3">
-                                <a href="https://github.com/fremontano/BuscadorDeRecetas" target="_blank">
-                                    <ion-icon name="logo-github" style="color: #7f4eac; font-size: 2rem;"></ion-icon>
-                                </a>
+            <!-- tools  -->
+            <section id="tools" class="tools">
+                <div class="container py-5">
+                    <div
+                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-3 justify-content-center">
+                        <!-- Tarjeta 1 -->
+                        <div class="col">
+                            <div class="card border-0 card-hidden">
+                                <img
+                                    src="./images/landingpage-software-gobierno-corporativo.png"
+                                    alt="Microservicios y Seguridad"
+                                    class="card-img-top" />
+                                <div class="card-img-container">
+                                    <h3
+                                        class="card-title fs-4 fw-bold hover-line">Microservicios
+                                        y Seguridad</h3>
+                                    <p class="card-text">Implementación basada
+                                        en MVS, utilizando JWT, OAuth y HTTPS
+                                        para
+                                        proteger las APIs y los datos.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="info">
-                            <p class="fw-bold fs-4">Consulta de APIs con JavaScript</p>
-                            <p class="mb-0">API TheMealDB para obtener recetas con Local Storage y uso del DOM.</p>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="col">
+                            <div class="card border-0 card-hidden">
+                                <img src="./images/API-Interface-Service.png"
+                                    alt="Desarrollo de APIs"
+                                    class="card-img-top" />
+                                <div class="card-img-container">
+                                    <h3
+                                        class="card-title fs-4 fw-bold hover-line p-3">Desarrollo
+                                        de APIs</h3>
+                                    <p class="card-text">Desarrollo y gestión de
+                                        APIs seguras y optimizadas, facilitando
+                                        la
+                                        integración de sistemas de manera
+                                        eficiente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div class="col">
+                            <div class="card border-0 card-hidden">
+                                <img
+                                    src="./images/Asesoria-en-implementacion.png"
+                                    alt="Base de Datos SQL y NoSQL"
+                                    class="card-img-top" />
+                                <div class="card-img-container">
+                                    <h3
+                                        class="card-title fs-4 fw-bold hover-line">Base
+                                        de Datos SQL y NoSQL</h3>
+                                    <p class="card-text">Gestión y optimización
+                                        de bases de datos SQL y NoSQL para alto
+                                        rendimiento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- tecnology  -->
+            <section class="languages" id="languages">
+                <div class="col-10 mx-auto my-5 text-center">
+                    <h2 className="mb-5">Por qué elijo estas tecnologia para mi
+                        desarrollo de mi carrera profesional.</h2>
+                </div>
+                <div class="container-xl py-5">
+                    <div class="row g-3">
+                        <!-- card 1 -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Oof-eCJGVDJhxTMttipiAd8ETE8nlhrELi652bJJ4Eg6-ItM-JeZXmTP52jT7rUswTs&usqp=CAU"
+                                            alt="github" />
+                                    </div>
+                                    <p class="fw-bold">Git & GitHub</p>
+                                </div>
+                                <p className="mt-3">Gestión eficiente control
+                                    para colaboración en equipo y despliegue
+                                    seguro
+                                    del código en el repositorio.</p>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://education.oracle.com/file/general/p-80-java.png"
+                                            alt="github" />
+                                    </div>
+                                    <p className="fw-bold">Java Spring Boot</p>
+                                </div>
+                                <p className="mt-3">Java Spring Boot, framework
+                                    utilizado para el desarrollo de aplicaciones
+                                    web
+                                    y servicios REST.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- card 3  -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfoZzQEUwX74bJZBmU-aN4hCzzl6knWzlSw&s"
+                                            alt="github" />
+                                    </div>
+                                    <p className="fw-bold">Vanilla
+                                        JavaScript</p>
+                                </div>
+                                <p className="mt-3">Consumo de APIs con Fetch y
+                                    Axios, y manipulación dinámica del DOM para
+                                    una
+                                    experiencia interactiva y eficiente.</p>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://cdn.openwebinars.net/media/fbads-nodejs.jpg"
+                                            alt="github" />
+                                    </div>
+                                    <p className="fw-bold">Node.Js & Express</p>
+                                </div>
+                                <p className="mt-3">Creación APIs con rutas
+                                    dinamicas y MVC para enpoint eficientes
+                                    junto a Jwt.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- card 5  -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://blog.brejnak.info/wp-content/uploads/2024/01/1-hkzF9m5828c-UIaSQNUug-e1706276166815-300x240.webp"
+                                            alt="github" />
+                                    </div>
+                                    <p className="fw-bold">SQL Server</p>
+                                </div>
+                                <p className="mt-3">Gestion de base de datos
+                                    relacionales, consultas optimizada y modelo
+                                    eficiente.</p>
+                            </div>
+                        </div>
+                        <!-- card 6  -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://kinlane-productions2.s3.amazonaws.com/postman/logo-glyph.png"
+                                            alt="github" />
+                                    </div>
+                                    <p className="fw-bold">Postman</p>
+                                </div>
+                                <p className="mt-3">Herramienta para probar y
+                                    documentar APIs de manera eficiente y
+                                    estructurada.</p>
+                            </div>
+                        </div>
+                        <!-- card 7  -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://ih1.redbubble.net/image.5536134119.2626/st,small,507x507-pad,600x600,f8f8f8.jpg"
+                                            alt="intellijent" />
+                                    </div>
+                                    <p className="fw-bold">IntellijIDEA.</p>
+                                </div>
+                                <p className="mt-3">IDE completo para el
+                                    desarrollo de aplicaciones en Java y Spring
+                                    boot, con
+                                    soporte
+                                    integral.</p>
+                            </div>
+                        </div>
+                        <!-- card 8  -->
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                            <div class="card tech-card">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png"
+                                            alt="github" />
+                                    </div>
+                                    <p className="fw-bold">Visual Studio
+                                        Code.</p>
+                                </div>
+                                <p className="mt-3">Editor de código ligero y
+                                    versátil, compatible con múltiples lenguajes
+                                    de
+                                    programación.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- projects  -->
+            <main class="container" id="projects">
+                <h3
+                    class="heading fw-bold mb-5 hover-line  text-center text-lg-start w-100">Mis
+                    Proyectos</h3>
+                <!-- cards projects  -->
+                <div class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Tarjeta 1 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-project"
+                                    style="width: 100%; height: 400px;">
+                                    <img src="./images/vera-web.png"
+                                        class="card-img-top" alt="proyectos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sitio Web
+                                            VERA</h5>
+                                        <p class="card-text">"Verea" es una
+                                            página web diseñada para ofrecer
+                                            soluciones empresariales
+                                            personalizadas a pequeñas empresas.
+                                            Creada con
+                                            Bootstrap, html, css y javascript
+                                        </p>
+                                        <!-- botones con los enlaces -->
+                                        <div
+                                            class="d-flex align-items-center justify-content-start">
+                                            <a
+                                                href="https://github.com/fremontano/vera-web-site"
+                                                target="_blank"
+                                                class="btn btn-outline-dark   d-inline-block btn-github"><i
+                                                    class="bi bi-github"></i>
+                                                GitHub</a>
+                                            <a
+                                                href="https://65dfb2d136767b7cd097508f--venerable-squirrel-b66373.netlify.app/"
+                                                target="_blank"
+                                                class="btn btn-outline-dark d-inline-block mx-4  btn-world"><i
+                                                    class="bi bi-globe"></i>
+                                                Sitio
+                                                Web</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 2 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-project"
+                                    style="width: 100%; height: 400px;">
+                                    <img src="https://images.pexels.com/photos/1860204/pexels-photo-1860204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                        class="card-img-top" alt="proyectos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">página web de
+                                            recetas</h5>
+                                        <p class="card-text">
+                                            página web de recetas fue desarrollada utilizando Bootstrap para el diseño y JavaScript con async/await para consumir una API de recetas de manera asíncrona. Esta combinación permite una experiencia más interactiva y dinámica, mejorando la integración y facilitando el acceso eficiente a los servicios.
+                                        </p>
+                                        <!-- botones con los enlaces -->
+                                        <div
+                                            class="d-flex align-items-center justify-content-start">
+                                            <a
+                                                href="https://github.com/freyderMontanoPerlaza/app-food"
+                                                target="_blank"
+                                                class="btn btn-outline-dark   d-inline-block btn-github"><i
+                                                    class="bi bi-github"></i>
+                                                GitHub</a>
+                                            <a
+                                                href="https://stunning-buttercream-e11d8f.netlify.app/"
+                                                target="_blank"
+                                                class="btn btn-outline-dark d-inline-block mx-4  btn-world"><i
+                                                    class="bi bi-globe"></i>
+                                                Sitio
+                                                Web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <!-- Tarjeta 3 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-project"
+                                    style="width: 100%; height: 400px; object-fit: cover;">
+                                    <img src="./images/yavin-web.png"
+                                        class="card-img-top" alt="proyectos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web site Yabin
+                                            office desing</h5>
+                                        <p class="card-text">Yabi es una
+                                            innovadora plataforma web diseñada
+                                            para una
+                                            agencia de diseño y marketing,
+                                            desarrollada con Bootstrap, HTML y
+                                            CSS
+                                        </p>
+
+                                        <!-- botones con los enlaces -->
+                                        <div
+                                            class="d-flex align-items-center justify-content-start">
+                                            <a
+                                                href="https://github.com/fremontano/Yabin-office-desing"
+                                                target="_blank"
+                                                class="btn btn-outline-dark   d-inline-block btn-github"><i
+                                                    class="bi bi-github"></i>
+                                                GitHub</a>
+                                            <a
+                                                href="https://wonderful-daffodil-83233b.netlify.app/"
+                                                target="_blank"
+                                                class="btn btn-outline-dark d-inline-block mx-4  btn-world"><i
+                                                    class="bi bi-globe"></i>
+                                                Sitio
+                                                Web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 4 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-project"
+                                    style="width: 100%; height: 400px;">
+                                    <img
+                                        src="./images/apv.png"
+                                        class="card-img-top object-fit-cover"
+                                        alt="proyectos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">API Rest
+                                            veterinaria</h5>
+                                        <div class="card-text">
+                                            <p>Estoy desarrollando una API REST
+                                                de veterinaria
+                                                utilizando Node.js y Express. La
+                                                API incluye un CRUD para
+                                                gestionar
+                                                veterinarios y mascotas.</p>
+                                            <p>
+                                                <span class="fw-bold">
+                                                    Funcionalidades:</span>
+                                                Implementa registro y
+                                                validación de email, además
+                                                de robustas medidas de seguridad
+                                                para proteger la información
+                                                sensible.
+                                            </p>
+                                        </div>
+                                        <a
+                                            href="https://github.com/fremontano/PetClinicAppFrontend"
+                                            target="_blank"
+                                            class="btn btn-outline-dark   d-inline-block btn-github me-4"><i
+                                                class="bi bi-github"></i>
+                                            GitHub Frontend</a>
+                                        <a
+                                            href="https://github.com/fremontano/PetClinicAPI/tree/master/backend"
+                                            target="_blank"
+                                            class="btn btn-outline-dark   d-inline-block btn-github"><i
+                                                class="bi bi-github"></i>
+                                            GitHub backend</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 5 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-project"
+                                    style="width: 100%; height: 400px;">
+                                    <img
+                                        src="./images/cmr-api.png"
+                                        class="card-img-top object-fit-cover"
+                                        alt="proyectos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">API Rest
+                                            CMR</h5>
+                                        <div class="card-text">
+                                            <p>Desarrollando una API REST
+                                                de cmr, basico de productos
+                                                utilizando Node.js y Express. La
+                                                API incluye un CRUD para
+                                                gestionar
+                                               productos y usuarios</p>
+                                            <p>
+                                                <span class="fw-bold">
+                                                    Funcionalidades:</span>
+                                                Implementa registro y
+                                                validación de email, además
+                                                de robustas medidas de seguridad
+                                                para proteger la información
+                                                sensible.
+                                            </p>
+                                        </div>
+                                       
+                                        <a
+                                            href="https://github.com/fremontano/apv_backend_deploy"
+                                            target="_blank"
+                                            class="btn btn-outline-dark   d-inline-block btn-github"><i
+                                                class="bi bi-github"></i>
+                                            GitHub backend</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-
                 </div>
-            </div>
+            </main>
 
-
-            <!-- card 2 
-            <div class="card-proyect card-one"
-                style=" background-image: url('https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
-                <div class="shadow"></div>
-                <div class="label d-flex justify-content-between">
-                    <div class="d-flex">
-                        <div class="icon fs-4 me-3 ">
-                            <a href="https://github.com/fremontano"
-                                target="_blank">
-                                <ion-icon name="logo-github" style="color: #7f4eac; font-size: 2rem;"></ion-icon>
-                            </a>
+            <!-- footer -->
+            <footer class="bg-dark text-light py-5 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <!-- Informacion de Freyder  -->
+                        <div class="col-12 col-lg-6  d-flex align-items-center">
+                            <img
+                                src="https://cdn.prod.website-files.com/572cc412e8e48c8223fa0e57/659fe2eae5a690f41d66a559_newsletter%20illustration.svg"
+                                alt class="img-fluid me-3" style="width: 30px;">
+                            <div>
+                                <h5 class="heading">Freyder Montaño.</h5>
+                                <p>
+                                    fremontano24@gmail.com
+                                </p>
+                            </div>
                         </div>
-                        <div class="info ">
-                            <p class="fw-bold fs-4">Proyecto Restfull Web Java Spring boot</p>
-                            <p class="mb-4">Sistema de de corte o reservas con operaciones CRUD y JWT.</p>
+
+                        <div class="col-12 col-lg-6 ">
+                            <!-- Menu -->
+                            <div class="col">
+
+                                <ul
+                                    class="list-unstyled d-flex flex-column flex-md-row gap-3">
+                                    <li> <a class="nav-link fs-5"
+                                            href="#about">Inicio</a></li>
+                                    <li> <a class="nav-link fs-5"
+                                            href="#about">Sobre Mí</a></li>
+                                    <li> <a class="nav-link fs-5"
+                                            href="#languages">Habilidades</a></li>
+                                    <li><a class="nav-link fs-5"
+                                            href="#services">Servicios</a></li>
+                                    <li><a class="nav-link fs-5"
+                                            href="#projects">Proyecto</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Links -->
+                            <div class="col-12 col-lg-6   mb-3 " id="#contact">
+                                <h5>Puedes contactarme en:</h5>
+                                <ul class="list-inline mt-3">
+                                    <li class="list-inline-item">
+                                        <a href="mailto:fremontano24@gmail.com"
+                                            target="_blank"
+                                            class="text-decoration-none text-light">
+                                            <ion-icon name="mail-sharp"
+                                                class="icon-link-footer"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/"
+                                            target="_blank"
+                                            class="text-decoration-none text-light">
+                                            <ion-icon name="logo-github"
+                                                class="icon-link-footer"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a
+                                            href="https://www.linkedin.com/in/freyder-monta%C3%B1o-perlaza-7b0181293/"
+                                            target="_blank"
+                                            class="text-decoration-none text-light">
+                                            <ion-icon name="logo-linkedin"
+                                                class="icon-link-footer"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a
+                                            href="https://wa.me/56947997211?text=Hola%20dejame%20un%20mensaje"
+                                            target="_blank"
+                                            class="text-decoration-none text-light">
+                                            <ion-icon name="logo-whatsapp"
+                                                class="icon-link-footer "></ion-icon>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="w-100">
+
+                        <div class="col-12 d-flex flex-column  text-start">
+                            <p class="me-4">&copy; 2024 Freyder. Todos los
+                                derechos reservados.</p>
+                            <div>
+                                <a href="#"
+                                    class="text-decoration-none text-light">Política
+                                    de privacidad</a> |
+                                <a href="#"
+                                    class="text-decoration-none text-light">Términos
+                                    del servicio</a>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
-            </div> -->
+            </footer>
 
-            <!-- card 3  -->
-            <div class="card-proyect card-one"
-                style=" background-image: url('https://www.cfnc.org/media/s0xhiu1v/careers5.jpg?width=500&height=333.5294117647059');">
-                <div class="shadow"></div>
-                <div class="label d-flex justify-content-between">
-                    <div class="d-flex">
-                        <div class="icon fs-4 me-3 ">
-                            <a href="https://github.com/fremontano/apv_backend_deploy" target="_blank">
-                                <ion-icon name="logo-github" style="color: #7f4eac; font-size: 2rem;"></ion-icon>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <p class="fw-bold fs-4">API Veterinaria con Node.js, Express</p>
-                            <p class="mb-4">Sistema de Gestión de pacientes, veterinarios y consultas.</p>
-                        </div>
-                    </div>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script type="module"
+                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule
+                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script src="js/app.js"></script>
+        </body>
 
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- footer -->
-    <footer class="bg-dark text-light py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <!-- Informacion de Freyder  -->
-                <div class="col-12 col-lg-6  d-flex align-items-center">
-                    <img src="https://cdn.prod.website-files.com/572cc412e8e48c8223fa0e57/659fe2eae5a690f41d66a559_newsletter%20illustration.svg"
-                        alt="" class="img-fluid me-3" style="width: 30px;">
-                    <div>
-                        <h5 class="heading">Freyder Montaño.</h5>
-                        <p>
-                            fremontano24@gmail.com
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6 ">
-                    <!-- Menu -->
-                    <div class="col">
-
-                        <ul class="list-unstyled d-flex flex-column flex-md-row gap-3">
-                            <li> <a class="nav-link fs-5" href="#about">Inicio</a></li>
-                            <li> <a class="nav-link fs-5" href="#about">Sobre Mí</a></li>
-                            <li> <a class="nav-link fs-5" href="#languages">Habilidades</a></li>
-                            <li><a class="nav-link fs-5" href="#services">Servicios</a></li>
-                            <li><a class="nav-link fs-5" href="#projects">Proyecto</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Links -->
-                    <div class="col-12 col-lg-6   mb-3 " id="#contact">
-                        <h5>Puedes contactarme en:</h5>
-                        <ul class="list-inline mt-3">
-                            <li class="list-inline-item">
-                                <a href="mailto:fremontano24@gmail.com" target="_blank"
-                                    class="text-decoration-none text-light">
-                                    <ion-icon name="mail-sharp" class="icon-link-footer"></ion-icon>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://github.com/" target="_blank" class="text-decoration-none text-light">
-                                    <ion-icon name="logo-github" class="icon-link-footer"></ion-icon>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/freyder-monta%C3%B1o-perlaza-7b0181293/"
-                                    target="_blank" class="text-decoration-none text-light">
-                                    <ion-icon name="logo-linkedin" class="icon-link-footer"></ion-icon>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://wa.me/56947997211?text=Hola%20dejame%20un%20mensaje" target="_blank"
-                                    class="text-decoration-none text-light">
-                                    <ion-icon name="logo-whatsapp" class="icon-link-footer "></ion-icon>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr class="w-100">
-
-                <div class="col-12 d-flex flex-column  text-start">
-                    <p class="me-4">&copy; 2024 Freyder. Todos los derechos reservados.</p>
-                    <div>
-                        <a href="#" class="text-decoration-none text-light">Política de privacidad</a> |
-                        <a href="#" class="text-decoration-none text-light">Términos del servicio</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="js/app.js"></script>
-</body>
-
-</html>
+    </html>

@@ -220,68 +220,83 @@ body {
     color: white; 
 }
 
-.cards .card-proyect {
-    position: relative;
-    min-width: 60px;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 5px;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    transition: flex 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-radius: 30px;
-}
 
-.cards .card-proyect .label {
-    display: flex;
-    position: absolute;
-    right: 0;
-    height: 40px;
+
+/* card projects  */
+/* projects */
+.card-project {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
     transition: 0.5s all ease-in-out;
 }
 
-.cards .card-proyect.active .label {
-    bottom: 20px;
-    left: 20px;
+.card:hover {
+    transform: translateY(-10px);
 }
 
-.cards .card-proyect.active {
-    flex-grow: 10000;
-    background-size: cover;
-}
-
-.cards .card-proyect:not(.active) .label {
-    bottom: 10px;
-    left: 10px;
-}
-
-.cards .card-proyect .shadow {
+.card-project::before {
+    content: '';
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    height: 150px; /* Aumentamos la altura del degradado */
-    background: linear-gradient(
-        0deg, rgba(0, 0, 0, 02), transparent /* Degradado más oscuro */
-    );
+    bottom: 0;
+    /* Asegúrate de cubrir toda la tarjeta */
+    background:
+        linear-gradient(to bottom,
+            rgba(13, 36, 63, 0.3),
+            rgba(13, 36, 63, 1));
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.cards .card-proyect.active .info {
+.card-project:hover::before {
     opacity: 1;
 }
 
-.cards .card-proyect:not(.active) .info {
+.card-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-body {
+    position: absolute;
+    /* Cambiado a absolute para controlar la visibilidad */
+    bottom: 0;
+    /* Alinea al fondo de la tarjeta */
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 4;
     opacity: 0;
+    /* Oculto por defecto */
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    transform: translateY(100px);
 }
 
+.card-project:hover .card-body {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-.fs-small{
+.card-project .btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
     font-size: 12px;
-    margin-left: 2rem;
+    border-radius: 5px;
 }
 
-
-.icon-link-footer{
-    font-size: 1.5rem;
+.card-project .btn:hover {
+    background-color: #5fc068;
+    color: #fff;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
 }
